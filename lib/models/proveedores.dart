@@ -50,7 +50,7 @@ class Listado {
       );
 
   Map<String, dynamic> toMap() => {
-        "providerid": provId,
+        "provider_id": provId,
         "provider_name": provName,
         "provider_last_name": provLastname,
         "provider_mail": provMail,

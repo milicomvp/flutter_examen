@@ -63,6 +63,8 @@ class ProveedorService extends ChangeNotifier {
         lstObject.indexWhere((element) => element.provId == object.provId);
     lstObject[index] = object;
 
+    Navigator.of(context).pop();
+
     return '';
   }
 
@@ -79,6 +81,7 @@ class ProveedorService extends ChangeNotifier {
     final decodeResp = response.body;
     print(decodeResp);
     lstObject.add(object);
+    Navigator.of(context).pop();
     return '';
   }
 
@@ -96,7 +99,8 @@ class ProveedorService extends ChangeNotifier {
     print(decodeResp);
     lstObject.clear(); //borra todo el listado
     loadData();
-    Navigator.of(context).pushNamed('listProveedor');
+    // Navigator.of(context).pushNamed('listProveedor');
+    Navigator.of(context).pop();
     return '';
   }
 }

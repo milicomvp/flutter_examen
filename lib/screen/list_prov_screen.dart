@@ -25,6 +25,8 @@ class ListProvScreen extends StatelessWidget {
           },
           child: ListTile(
             title: Text(proveedorService.lstObject[index].provName),
+            subtitle: Text(proveedorService.lstObject[index].provLastname),
+            leading: const Icon(Icons.contact_mail_outlined),
           ),
         ),
       ),
