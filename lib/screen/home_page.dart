@@ -15,9 +15,15 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Gestión de Objetos'),
+        title: const Text('<--- Menu Principal'),
       ),
       drawer: const NavigationDrawer(),
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage("assets/logo.png"), fit: BoxFit.fill),
+        ),
+      ),
     );
   }
 }
